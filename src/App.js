@@ -1,14 +1,14 @@
 import React from 'react';
+import { connect } from 'react-redux'
 import SearchBar from "./SearchBar"
 
-class App extends React.Component {
-  render() {
-    return (
-      <div className="App">
-        <SearchBar />
-      </div>
-    );
-  }
+const App = (props) => {
+  console.log(props);
+  return (
+    <div id="App">
+      <SearchBar />
+    </div>
+  );
 }
 
-export default App;
+export default connect(state => ({...state}))(App);
