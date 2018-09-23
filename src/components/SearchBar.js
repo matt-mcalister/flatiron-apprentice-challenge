@@ -25,8 +25,8 @@ class SearchBar extends React.Component {
           <img src="/images/Octocat.jpg" alt="Octocat" />
         </div>
         <form onSubmit={this.handleSubmit}>
-          <input type="text" value={this.state.username} onChange={this.handleChange} />
-          <input type="submit" value="Search" />
+          <input type="text" className="text-input" value={this.state.username} onChange={this.handleChange} />
+          <input type="submit" className="submit-input" value="Search" />
         </form>
       </div>
     )

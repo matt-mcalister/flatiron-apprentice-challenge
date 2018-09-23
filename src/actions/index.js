@@ -1,7 +1,14 @@
 import * as actions from './types'
 
-// export const setUsername = (username) => {
-//   return (dispatch) => {
-//
-//   }
-// }
+const setUserObj = (userObj) => {
+  return {
+    
+  }
+}
+
+
+export const setUsername = (username) => {
+  return (dispatch) => {
+
+  }
+}

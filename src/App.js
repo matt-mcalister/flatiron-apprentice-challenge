@@ -1,12 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux'
-import SearchBar from "./SearchBar"
+import SearchBar from "./components/SearchBar"
+import UserInfoContainer from "./components/UserInfoContainer"
 
 const App = (props) => {
-  console.log(props);
   return (
     <div id="App">
       <SearchBar />
+      <UserInfoContainer />
     </div>
   );
 }
