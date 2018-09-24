@@ -23,6 +23,33 @@ click 'Personal Access Tokens'. Place this token in
 * To view the application in the browser, run `npm start` and navigate to
 [localhost:3000](http://localhost:3000).
 
+### Contributing
+Help this application grow! If you have any cool ideas for what this app can do,
+submit your changes via pull request. I only ask that you make sure to keep in
+mind the following guidelines:
+
+* As this application uses Redux to manage its state, please be mindful of which
+components maintain their own state. If you make changes to the  Reducers or
+Actions, make sure that it does not break the current functionality.
+* This app was built using Test Driven Development, so write yourself some tests!
+Take care of those edge cases. Additionally, ensure that any changes you make do
+not break the current tests.
+* If you add any dependencies, be sure to update the package.json.
+* If you make changes to the Component Hierarchy, please update the diagram below.
+
+```
+            App
+           / | \
+          /  |  \
+         /   |   \
+  SearchBar  |    \
+             |     \
+       NotFound    UserInfoContainer
+                      \
+                       \
+                       StatIcon
+```
+
 ### Built With
 * React.js
 * Redux
