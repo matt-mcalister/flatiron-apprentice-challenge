@@ -3,7 +3,7 @@ import * as actions from '../actions/types'
 import expect from 'expect'
 
 describe('searchReducer', () => {
-  it('should return the initial state', () => {
+  it('should return the initial state when passed an empty action', () => {
     expect(
       searchReducer(undefined, {})
     ).toEqual({
