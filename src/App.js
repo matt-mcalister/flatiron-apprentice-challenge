@@ -5,7 +5,6 @@ import UserInfoContainer from "./components/UserInfoContainer"
 import NotFound from "./components/NotFound"
 
 export const App = (props) => {
-  console.log(props);
   return (
     <div id="App">
       <SearchBar />
@@ -21,7 +20,7 @@ export const App = (props) => {
 
 const mapStateToProps = (state) => {
   return {
-    notFound: !!state.search.userObj && !!state.search.userObj.message
+    notFound: !!state.search.userObj && !!state.search.userObj.message,
   }
 }
 
