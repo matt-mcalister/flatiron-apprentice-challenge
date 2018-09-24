@@ -1,9 +1,12 @@
 import React from "react"
 
-const StatIcon = (props) => {
+const StatIcon = ({ type, num, color }) => {
   return (
     <div className='stat-icon'>
-      yo
+      <div className="stat" style={{backgroundColor: color}}>
+        {num}
+      </div>
+      {type}
     </div>
   )
 }

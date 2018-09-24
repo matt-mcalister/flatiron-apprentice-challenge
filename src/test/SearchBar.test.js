@@ -9,7 +9,7 @@ chai.use(sinonChai);
 Enzyme.configure({ adapter: new Adapter() });
 
 
-import SearchBar from '../components/SearchBar';
+import { SearchBar } from '../components/SearchBar';
 
 
 describe('<SearchBar />' , function() {
@@ -25,7 +25,7 @@ describe('<SearchBar />' , function() {
     expect(wrapper.find('input.text-input')).to.have.lengthOf(1)
   })
 
-  it('includes 1 button', () => {
+  it('includes 1 submit button', () => {
     expect(wrapper.find('input.submit-input')).to.have.lengthOf(1)
   })
 

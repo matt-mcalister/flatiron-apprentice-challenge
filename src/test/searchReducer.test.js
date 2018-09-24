@@ -1,5 +1,5 @@
 import searchReducer from '../reducers/searchReducer'
-import * as actions from '../actions'
+import * as actions from '../actions/types'
 import expect from 'expect'
 
 describe('searchReducer', () => {
